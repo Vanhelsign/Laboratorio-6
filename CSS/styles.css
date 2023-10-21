@@ -1,0 +1,12 @@
+body {
+    height: 100vh;
+    background-color: #FBFBFB;
+}
+
+.nav-link {
+    color: aquamarine;
+}
+
+.nav-link:hover {
+    color: white;
+}

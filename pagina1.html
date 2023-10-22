@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Pagina 1</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark" id="navbar">
+            <div class="container">
+                
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarS"
+                    aria-controls="navbarS"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarS" class="collapse navbar-collapse">
+                    <ul  class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link fs-6">Index</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pagina1.html" class="nav-link text-white fs-6">Pagina 1</a>
+                        </li>
+                        <li>
+                            <a href="pagina2.html" class="nav-link fs-6">Pagina 2</a>
+                        </li>
+                        <li>
+                            <a href="pagina3.html" class="nav-link fs-6">Pagina 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 p-3 bg-light border-end border-start">
+                    <h1 class="text-center pt-3">PAGINA 1</h1>
+                    <h2 class="text-center pt-3">Manejo de la manipulacion del DOM</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pb-3">
+            <div class="row bg-light border-start border-end">
+                <div class="col-sm-12 col-lg-4 p-3 text-center">
+                    <div class="card" >
+                        <div class="card-body">
+                            <h5 class="card-title">Append</h5>
+                             <p class="card-text">Se utiliza para agregar un elemento como último hijo de otro elemento en el DOM.</p>
+                             <div class="col-sm-12">
+                                <img class="imagenAncha pb-1" src="images/append.webp" alt="bapp">
+                             </div>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                               Mostrar ejemplo
+                            </button>
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Append</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!--Creacion del ejemplo-->
+                                        <div class="container bg-light border">
+                                            <div class="row">
+                                                <div class="col-sm-12 contentAppend">
+                                                    <P>Prueba de la funcion append</P>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" id="append">Añadir parrafo</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4 p-3 text-center">
+                    <div class="card" >
+                        <div class="card-body">
+                            <h5 class="card-title">Prepend</h5>
+                             <p class="card-text">Agrega un elemento como primer hijo de otro elemento en el DOM.</p>
+                             <div class="col-sm-12">
+                                <img class="imagen pb-1" src="images/prepend.png" alt="pre">
+                            </div>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                               Mostrar ejemplo
+                            </button>
+                            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Prepend</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!--Creacion del ejemplo-->
+                                        <div class="container bg-light border">
+                                            <div class="row">
+                                                <div class="col-sm-12 contentPrepend">
+                                                    <P>Prueba de la funcion prepend</P>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" id="prepend">Añadir parrafo</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4 p-3 text-center">
+                    <div class="card" >
+                        <div class="card-body">
+                            <h5 class="card-title">After</h5>
+                             <p class="card-text">Permite insertar un elemento después del elemento en cuestión en el DOM.</p>
+                             <div class="col-sm-12">
+                                <img class="imagen pb-1" src="images/after.jpg" alt="pef">
+                            </div>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                               Mostrar ejemplo
+                            </button>
+                            <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">After</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!--Creacion del ejemplo-->
+                                        <div class="container bg-light border">
+                                            <div class="row">
+                                                <div class="col-sm-12 contentAfter">
+                                                    <P class="bg-warning">Soy un parrafo dentro del div</P>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" id="after">Añadir parrafo</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6 p-3 text-center">
+                    <div class="card" >
+                        <div class="card-body">
+                            <h5 class="card-title">Before</h5>
+                             <p class="card-text"> Se utiliza para insertar un elemento antes de un elemento especifico en cuestión en el DOM. </p>
+                             <div class="col-sm-12">
+                                <img class="imagen pb-1" src="images/before.webp" alt="bef">
+                             </div>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                               Mostrar ejemplo
+                            </button>
+                            <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Before</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!--Creacion del ejemplo-->
+                                        <div class="container bg-light border">
+                                            <div class="row">
+                                                <div class="col-sm-12 contentBefore">
+                                                    <P class="bg-warning">Soy un parrafo dentro del div</P>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" id="before">Añadir parrafo</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6 p-3 text-center">
+                    <div class="card" >
+                        <div class="card-body">
+                            <h5 class="card-title">Remove</h5>
+                             <p class="card-text">Se utiliza para eliminar un elemento del DOM, asi como sus descendientes del árbol de este. </p>
+                             <div class="col-sm-12">
+                                <img class="imagen pb-1" src="images/remove.png" alt="bef">
+                             </div>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">
+                               Mostrar ejemplo
+                            </button>
+                            <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Remove</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!--Creacion del ejemplo-->
+                                        <div class="container bg-light border">
+                                            <div class="row">
+                                                <div class="col-sm-12 contentRemove">
+                                                    <P>Prueba de la funcion de remove en un comentario 1</P>
+                                                    <P>Prueba de la funcion de remove en un comentario 2</P>
+                                                    <P>Prueba de la funcion de remove en un comentario 3</P>
+                                                    <P>Prueba de la funcion de remove en un comentario 4</P>
+                                                    <P>Prueba de la funcion de remove en un comentario 5</P>
+                                                    <P>Prueba de la funcion de remove en un comentario 6</P>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" id="remove">Eliminar parrafo</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+    <footer>
+        <div class="bg-dark text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="text-center m-3">Esta pagina web fue creado por Kevin Vanhelsign Elizarraras Anariba</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!--Archivo JS-->
+    <script src="JS/modificarDOM.js"></script>
+</body>
+</html>
